@@ -10,7 +10,7 @@ function addItem(&$hs,$name, $tuoi){
     array_push($hs, $hstemp);
     $_SESSION['hs'] = $hs;
     // print_r($hstemp);
-    return true;
+    return array($name, $tuoi);
 }
 
 function editItem(&$hs, $name, $tuoi, $key)
@@ -48,7 +48,7 @@ function deleteItemWithName(array &$hs, string $name)
 }
 
 
-//addItem($hs, "cao", "10");
+addItem($hs, "cao", "10");
 //addItem($hs, "hung", "20");
 //addItem($hs, "duy", "30");
 //editItem($hs, "duy", "1", "1");
